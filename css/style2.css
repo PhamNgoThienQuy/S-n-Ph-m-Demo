@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: font1;
+    src: url();
+}
+
+body{
+    font-family: font1;
+}
+
+.bg{
+    height: 150px;
+    background-color: #007DB8;
+    margin: -8px 0;
+    border-style: solid ;
+    border-width: 2px;
+}
+
+.bg-2{
+    height: 150px;
+    background-color:aqua;
+    margin: 15px;
+}
+
+.size{width:130px;
+    height: 105px;
+margin-right:60px;
+margin-top: 10px; 
+display:inline-block;}
+
+.dropbtn {
+  background-color: #007DB8;
+  color: black;
+  padding: 50px;
+  font-size: 17px;
+  border: none;
+  float: right;
+}
+    
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;   
+  min-width: 109px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+.dropdown:hover .dropbtn {background-color:dodgerblue;}
+
+.colorwhite{ color: white;}
+
+.border2{
+    border-style:solid;
+border-width: 50px;}
+
+.textcenter {text-align: center;}
+
+.textfortheworldofaudi {font-family: 'Courier New', Courier, monospace; font-size: 100px;}
+
+.margintop{margin-top: 100px;}
+
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  float: right;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -50px;
+  left: 16px;}
+
+  .navbarleft {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  float: left;
+  margin-left: 25px;
+  margin-top: 50px;}
+
+  .navbarright {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial;
+    float: right;
+    margin-right: 200px;
+    margin-top: 50px;}
+
+.w-100{width: 100%;}
+
+.form-login input{
+    height: 35px;
+    margin-bottom: 10px;
+    outline: none;
+    justify-content: center;
+    margin-left: 300px;
+}
+.form-login button{ 
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color:dodgerblue;
+    color: white;
+    justify-content: center;
+
+}
+
+.a{
+margin-left: 440px;
+margin-top: 20px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.a2{
+margin-left: 400px;
+margin-top: 20px;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 300px;
+}
+
+.height{height: 400px;}
+  
+.clock {
+    position: absolute;
+    top: 6%;
+    left: 80%;
+    transform: translateX(-50%) translateY(-50%0);
+    color: white;
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+  html {
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    /* background-color: red; */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 360px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+.bordermenu{
+    border-style:solid;
+    border-width: 3px;
+    background-color: #007DB8;
+  color: black;}
+
+.d-float{float: left;}
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    padding: 0 20px;
+    line-height: 34px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: raleway-b;
+    color: white;
+    margin: 50px 0;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: #007DB8; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: dodgerblue; 
+}
+
+.bg2{height: 170px;
+    background-color: #007DB8;
+    margin: 15px 0;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+.container2{
+    width: 100%;
+    margin-left: 600px;
+    margin-top: 30px;}
+
+.bg-footer{
+  background-color: black;
+  float: left;
+}
+
+html{scroll-behavior: smooth;}
+

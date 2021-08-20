@@ -1,0 +1,35 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sign In </title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="CSS/gridlayout.css">
+</head>
+
+<body>
+  <img src="Picture/Dell-Technologies.png"; width="170px"; height="170px"; style="margin-left: 800px;"; style="margin-bottom: 1000px;">
+  
+  <div class="container2";>
+      <div class="col-3 form-login">
+          <input type="text" placeholder="Username" id="username" class="w-100">
+          <input type="text" placeholder="Password" id="pass" class="w-100">
+          <button onclick="KT_Dangnhap()" ; class="a"> Sign in </button>
+          <p class="a2"> Don't have an account? <a href="#"> Sign up</a> </p>
+
+
+
+      </div>
+  </div>
+
+  <script>
+      function KT_Dangnhap() {
+          var username, pass;
+          username = document.getElementById('username').value;
+          pass = document.getElementById('pass').value;
+          if (username == "" || pass == "")
+              alert("Username cannot be blanked");
+          else
+              alert("Welcome" + username);
+      }
+      
